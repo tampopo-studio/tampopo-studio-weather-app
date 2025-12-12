@@ -3,30 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>tampopo studio weather app</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="Search" />
-      </form>
-    </header>
+    <div class="city-search-weather">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city..." required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
 
-    <main>
-      <div>
-        <h1>Paris</h1>
-        <h2>France</h2>
-        <p>
-          Monday
-          <br />
-          12/01/2025 14:00 <br />Wind 5km/h <br />💧30%
-        </p>
-      </div>
-      <div>⛅️ <br />PARTLY CLOUDY</div>
-      <div>15°C</div>
-    </main>
-
+      <main>
+        <div>
+          <h1>Paris</h1>
+          <h2>France</h2>
+          <p>
+            Monday
+            <br />
+            12/01/2025 14:00 <br />Wind 5km/h <br />💧30%
+          </p>
+        </div>
+        <div>⛅️ <br />PARTLY CLOUDY</div>
+        <div>15°C</div>
+      </main>
+    </div>
     <footer>
       Designed and coded by
       <a href="https://github.com/tampopo-studio" target="_blank"

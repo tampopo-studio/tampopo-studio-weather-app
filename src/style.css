@@ -1,0 +1,29 @@
+body {
+  background: linear-gradient(
+    -70deg,
+    rgb(233, 222, 250) 0%,
+    rgb(251, 252, 219) 100%
+  );
+  margin-bottom: 100%;
+  font-family: "IBM Plex Mono", monospace;
+}
+h1 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.city-search-weather {
+  background-color: rgb(255, 255, 255, 0.8);
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 30px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+  border-radius: 16px;
+}
