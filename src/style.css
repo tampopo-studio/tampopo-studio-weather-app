@@ -7,6 +7,9 @@ body {
   margin-bottom: 100%;
   font-family: "IBM Plex Mono", monospace;
 }
+a {
+  color: #cf8a63;
+}
 h1 {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
@@ -26,7 +29,7 @@ h2 {
     rgb(251, 252, 219) 35%
   );
   max-width: 700px;
-  margin: 60px auto;
+  margin: 60px auto 10px;
   padding: 30px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   border-radius: 16px;
@@ -56,4 +59,11 @@ header {
   font-size: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   margin-left: 3px;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+  margin: 0;
+  color: rgb(0, 0, 0, 0.5);
 }
