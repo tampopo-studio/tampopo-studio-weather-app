@@ -10,17 +10,6 @@ body {
 a {
   color: #cf8a63;
 }
-h1 {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-h2 {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
-}
 
 .city-search-weather {
   background: linear-gradient(
@@ -59,6 +48,38 @@ header {
   font-size: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   margin-left: 3px;
+}
+main {
+  margin: 30px 15px;
+}
+
+.weather-display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.city-name {
+  margin: 0;
+  font-family: "DM Serif Text", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 70px;
+  letter-spacing: 3.5px;
+  margin-block-end: -12px;
+}
+
+.country-name {
+  margin: 0;
+  font-family: "DM Serif Text", serif;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  color: rgb(0 0 0 / 68%);
+  font-style: normal;
+}
+.today {
+  font-size: 25px;
+  font-weight: 200;
+  font-style: normal;
 }
 
 footer {

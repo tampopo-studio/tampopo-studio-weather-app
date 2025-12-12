@@ -15,7 +15,7 @@
   <body>
     <div class="city-search-weather">
       <header>
-        <form class="search-engine">
+        <form>
           <input
             type="search"
             placeholder="Enter a city..."
@@ -27,19 +27,22 @@
       </header>
 
       <main>
-        <div>
-          <h1>Paris</h1>
-          <h2>France</h2>
+        <h1 class="city-name">Paris</h1>
+        <h2 class="country-name">France</h2>
+        <div class="weather-display">
           <p>
-            Monday
+            <span class="today">Monday</span>
             <br />
-            12/01/2025 14:00 <br />Wind 5km/h <br />💧30%
+            <span class="details"
+              >12/01/2025 14:00 <br />Wind 5km/h <br />💧30%
+            </span>
           </p>
+          <div>⛅️ <br />PARTLY CLOUDY</div>
+          <div>15°C</div>
         </div>
-        <div>⛅️ <br />PARTLY CLOUDY</div>
-        <div>15°C</div>
       </main>
     </div>
+
     <footer>
       Designed and coded by
       <a href="https://github.com/tampopo-studio" target="_blank"
