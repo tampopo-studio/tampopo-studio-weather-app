@@ -68,7 +68,7 @@ main {
   font-family: "DM Serif Text", serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 70px;
+  font-size: 63px;
   letter-spacing: 3.5px;
   margin-block-end: -12px;
 }
@@ -114,7 +114,7 @@ main {
 
 .actual-temperature {
   font-family: "DM Serif Text";
-  font-size: 130px;
+  font-size: 123px;
   position: relative;
   top: -5px;
   left: -18px;
