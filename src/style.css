@@ -33,7 +33,7 @@ header {
   background-color: #ffffff;
   border: none;
   border-radius: 5px;
-  width: 80%;
+  width: 75%;
   padding: 15px;
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
@@ -46,7 +46,7 @@ input {
   background-color: #f2f83c;
   border: none;
   border-radius: 5px;
-  width: 16%;
+  width: 18%;
   padding: 13px 28px;
   font-family: "IBM Plex Mono", monospace;
   color: #080808;
@@ -116,7 +116,7 @@ main {
   font-family: "DM Serif Text";
   font-size: 130px;
   position: relative;
-  top: 32px;
+  top: -5px;
   left: -18px;
 }
 
