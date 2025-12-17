@@ -15,19 +15,20 @@
   <body>
     <div class="city-search-weather">
       <header>
-        <form>
+        <form id="search-form">
           <input
             type="search"
             placeholder="ENTER A CITY..."
             required
             class="text-field"
+            id="text-field"
           />
           <input type="submit" value="SEARCH" class="submit-button" />
         </form>
       </header>
 
       <main>
-        <h1 class="city-name">Los Angeles</h1>
+        <h1 class="city-name" id="city-name">Los Angeles</h1>
         <h2 class="country-name">UNITED STATES OF AMERICA</h2>
         <div class="weather-display">
           <p class="text-block">
@@ -66,6 +67,6 @@
         >Netlify</a
       >.
     </footer>
-    <script src="app.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>

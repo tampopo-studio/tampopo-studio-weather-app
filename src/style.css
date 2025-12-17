@@ -71,6 +71,7 @@ main {
   font-size: 63px;
   letter-spacing: 3.5px;
   margin-block-end: -12px;
+  text-transform: capitalize;
 }
 
 .country-name {
@@ -80,6 +81,7 @@ main {
   letter-spacing: 0.5px;
   color: rgb(8, 8, 8, 0.2);
   font-style: normal;
+  text-transform: uppercase;
 }
 .text-block {
   position: relative;
@@ -110,6 +112,7 @@ main {
   top: -64px;
   left: 16px;
   letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .actual-temperature {
