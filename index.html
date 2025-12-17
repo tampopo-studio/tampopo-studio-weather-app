@@ -29,23 +29,25 @@
       </header>
 
       <main>
-        <h1 class="city-name" id="city-name">Los Angeles</h1>
+        <h1 class="city-name" id="city-name"></h1>
         <h2 class="country-name">UNITED STATES OF AMERICA</h2>
         <div class="weather-display">
           <p class="text-block">
             <span class="today">Tuesday</span>
             <br />
-            <span class="details"
-              >12/01/2025 14:00 <br />WIND 10KM/H <br />💧 30 %
-            </span>
+            <span class="details">
+              <span id="time">/01/2025 </span>
+              <br />WIND <span id="wind-speed"></span> <br />💧
+              <span id="humidity"></span
+            ></span>
           </p>
           <div>
             <span class="weather-emoji">⛅️</span>
             <br />
-            <span class="weather-description">PARTLY CLOUDY</span>
+            <span class="weather-description" id="description"></span>
           </div>
           <div>
-            <span class="actual-temperature" id="temperature">15</span
+            <span class="actual-temperature" id="temperature"></span
             ><span class="celsius">°C</span>
           </div>
         </div>
