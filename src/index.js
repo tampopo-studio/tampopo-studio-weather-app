@@ -25,8 +25,6 @@ function showTemperature(response) {
 
   temperatureToDisplay.innerHTML = Math.round(newTemperature);
   iconToDisplay.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
-
-  console.log(dayToDisplay);
 }
 
 function formatDateAndTime(date) {
