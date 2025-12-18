@@ -42,6 +42,9 @@ header {
 input {
   text-transform: uppercase;
 }
+input:focus {
+  outline-color: #eae1f8;
+}
 .submit-button {
   background-color: #f2f83c;
   border: none;
@@ -54,6 +57,12 @@ input {
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
   margin-left: 3px;
 }
+.submit-button:hover {
+  background-color: #d7d333;
+  color: #ffffff;
+  cursor: pointer;
+}
+
 main {
   margin: 30px 15px;
 }
@@ -98,17 +107,20 @@ main {
   font-style: normal;
   line-height: 1.6;
 }
+.weather-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -59px;
+}
+
 .weather-icon {
   width: 200px;
-  position: relative;
-  left: -30px;
 }
 
 .weather-description {
   font-size: 18px;
-  position: relative;
-  top: -15px;
-  left: 20px;
+  margin-top: -25px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }
