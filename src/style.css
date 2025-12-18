@@ -98,18 +98,17 @@ main {
   font-style: normal;
   line-height: 1.6;
 }
-.weather-emoji {
-  font-size: 200px;
+.weather-icon {
+  width: 200px;
   position: relative;
-  top: -22px;
-  left: -09px;
+  left: -30px;
 }
 
 .weather-description {
   font-size: 18px;
   position: relative;
-  top: -64px;
-  left: 16px;
+  top: -15px;
+  left: 20px;
   letter-spacing: 0.5px;
   text-transform: uppercase;
 }

@@ -3,27 +3,30 @@ function showTemperature(response) {
   let newTemperature = response.data.temperature.current;
 
   let cityToDisplay = document.querySelector("#city-name");
+  let countryToDisplay = document.querySelector("#country-name");
   let descriptionToDisplay = document.querySelector("#description");
   let humidityToDisplay = document.querySelector("#humidity");
   let windSpeedToDisplay = document.querySelector("#wind-speed");
   let newWindSpeed = Math.round(response.data.wind.speed);
 
-  let timeToDisplay = document.querySelector("#time");
-
+  let dayToDisplay = document.querySelector("#today");
+  let timeAndDateToDisplay = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
-  console.log(date);
 
-  console.log(response.data);
+  let iconToDisplay = document.querySelector("#icon");
 
   cityToDisplay.innerHTML = response.data.city;
-  timeToDisplay.innerHTML = formatDateAndTime(date);
+  countryToDisplay.innerHTML = response.data.country;
+  dayToDisplay.innerHTML = findDay(date);
+  timeAndDateToDisplay.innerHTML = formatDateAndTime(date);
   windSpeedToDisplay.innerHTML = `${newWindSpeed}KM/H`;
   humidityToDisplay.innerHTML = `${response.data.temperature.humidity}%`;
   descriptionToDisplay.innerHTML = response.data.condition.description;
 
   temperatureToDisplay.innerHTML = Math.round(newTemperature);
+  iconToDisplay.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
 
-  console.log(timeToDisplay);
+  console.log(dayToDisplay);
 }
 
 function formatDateAndTime(date) {
@@ -32,16 +35,6 @@ function formatDateAndTime(date) {
   let actualDate = date.getDate();
   let minutes = date.getMinutes();
   let hours = date.getHours();
-  let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday",
-  ];
-  let day = days[date.getDay()];
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -57,6 +50,21 @@ function formatDateAndTime(date) {
   }
 
   return `${actualDate}/${month}/${year} ${hours}:${minutes}`;
+}
+
+function findDay(date) {
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let newDay = days[date.getDay()];
+
+  return newDay;
 }
 
 function searchCity(city) {
